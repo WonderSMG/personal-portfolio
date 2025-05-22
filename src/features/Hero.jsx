@@ -6,7 +6,7 @@ import githubLogo from "../assets/githubLogo.svg";
 
 const Hero = () => {
   return (
-    <main className="flex flex-col lg:flex-row lg:justify-between lg:items-center px-4 py-8 md:px-20 lg:px-24 lg:py-12 border-b border-[#C7C7C7] pb-14">
+    <main className="flex flex-col lg:flex-row lg:justify-between lg:items-center px-4 py-8 md:px-20 lg:px-24 lg:pb-12 pt-24 border-b border-[#C7C7C7] pb-14">
       {/* Left Section: Text and Buttons */}
       <section className="flex flex-col items-start text-left">
         <div className="text-white lg:w-[544px] w-full h-auto mt-8 lg:mt-0">

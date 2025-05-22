@@ -1,4 +1,6 @@
+// filepath: /Users/mac/Desktop/Personal-portfolio/src/layouts/Navbar.jsx
 import React, { useState } from "react";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 import robertLogo from "../assets/robert garcia logo.svg";
 import mobileNavLogo from "../assets/mobileNavLogo.svg";
 
@@ -10,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <header>
+    <header className="fixed top-0 left-0 w-full z-50 bg-black">
       <main>
         <section className="flex justify-between items-center md:px-12 md:py-6 px-2 py-4">
           {/* Logo */}
@@ -20,10 +22,17 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
-            <ul className="flex gap-8 leading-[150%] ">
-              <li className="text-[#C7C7C7]">Work</li>
-              <li className="text-[#C7C7C7]">About</li>
-              <li className="text-[#C7C7C7]">Contact</li>
+            <ul className="flex gap-8 leading-[150%]">
+              <button className="text-[#C7C7C7] cursor-pointer hover:text-[#D3E97A]">Work</button>
+              <button className="text-[#C7C7C7] cursor-pointer hover:text-[#D3E97A]">About</button>
+              <Link
+                to="connect"
+                smooth={true}
+                duration={500}
+                className="text-[#C7C7C7] cursor-pointer hover:text-[#D3E97A]"
+              >
+                Contact
+              </Link>
             </ul>
           </nav>
 
@@ -41,7 +50,15 @@ const Navbar = () => {
             <ul className="flex flex-col gap-4">
               <li>Work</li>
               <li>About</li>
-              <li>Contact</li>
+              <Link
+                to="connect"
+                smooth={true}
+                duration={500}
+                onClick={toggleMobileNav}
+                className="cursor-pointer"
+              >
+                Contact
+              </Link>
             </ul>
           </nav>
         )}

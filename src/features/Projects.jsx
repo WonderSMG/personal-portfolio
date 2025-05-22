@@ -45,7 +45,7 @@ const Projects = () => {
     <section className="px-4 py-12 md:px-20 lg:px-24 border-b border-[#C7C7C7] pb-14">
       {/* Heading */}
       <div className="text-left mb-12">
-        <h2 className="text-[46px] md:text-[76px] font-Bebas font-bold uppercase text-[#FFFFFF]">
+        <h2 className="text-[46px] md:text-[76px] h-[76px] lg:w-[464px] font-Bebas font-bold uppercase text-[#FFFFFF]">
           FEATURED PROJECTS
         </h2>
         <p className="text-[16px]  md:text-[18px] font-Manrope text-[#C7C7C7] mt-4 break-words">
@@ -55,7 +55,7 @@ const Projects = () => {
       </div>
 
       {/* Projects */}
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-12 lg:py-3">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -83,7 +83,7 @@ const Projects = () => {
             </div>
 
             {/* Right: Project Details */}
-            <div className="flex flex-col gap-4 lg:w-1/2 font-Manrope ">
+            <div className="flex flex-col gap-4 lg:w-1/2 font-Manrope lg:py-30 ">
               <h3 className="text-xl md:text-2xl font-bold text-[#FFFFFF]">
                 {project.title}
               </h3>

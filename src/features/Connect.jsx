@@ -65,7 +65,7 @@ const Connect = () => {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row lg:justify-between px-4 py-12 md:px-20 lg:px-24">
+    <section id="connect" className="flex flex-col lg:flex-row lg:justify-between px-4 py-12 md:px-20 lg:px-24">
       {/* Left Section */}
       <div className="flex flex-col gap-6 lg:w-1/2">
         <h2 className="text-[30px] md:text-[60px] font-Bebas font-bold uppercase text-[#FFFFFF]">
@@ -73,12 +73,18 @@ const Connect = () => {
         </h2>
         <p className="text-sm md:text-base text-[#C7C7C7] font-Manrope">
           Say hello at{" "}
-          <a href="mailto:ayedogbonwonder@gmail.com" className="text-white underline decoration-[#c2d86a] hover:text-[#c2d86a]">
+          <a
+            href="mailto:ayedogbonwonder@gmail.com"
+            className="text-white underline decoration-[#c2d86a] hover:text-[#c2d86a]"
+          >
             ayedogbonwonder@gmail.com
           </a>
           . <br />
           For more info, here is my{" "}
-          <a href="/resume" className="text-white underline decoration-[#c2d86a]">
+          <a
+            href="/resume"
+            className="text-white underline decoration-[#c2d86a]"
+          >
             resume
           </a>
           .
@@ -113,12 +119,13 @@ const Connect = () => {
             <img src={instagramIcon} alt="Instagram" className="w-6 h-6" />
           </a>
         </div>
-        <div className="mt-12 text-sm text-[#C7C7C7] font-Manrope hidden lg:block">
+        <div className="mt-12 text-sm text-[#C7C7C7] font-Manrope hidden lg:block pt-36">
           &copy; 2025 Robert Garcia
         </div>
       </div>
 
       {/* Right Section: Form */}
+      
       <div className="flex flex-col gap-6 font-Manrope  lg:w-1/2 mt-12 lg:mt-0">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>
