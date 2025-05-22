@@ -62,25 +62,35 @@ const Projects = () => {
           className="flex flex-col lg:flex-row lg:items-start gap-8"
         >
           {/* Left: Project Card */}
-          <div
-            className={`bg-[#1A1A1A] rounded-lg shadow-md flex-1 h-[343px] lg:h-[600px] py-16 px-8 flex justify-center items-center ${
-              index === 0 ? "sm:py-0" : ""
-            }`}
-          >
-            <img
-              src={
-                index === 0
-                  ? window.innerWidth < 768
-                    ? project.mobileImage
-                    : project.Image
-                  : project.Image
-              }
-              alt={project.title}
-              className={`lg:w-[488px] lg:h-[347px] rounded-md object-contain ${
-                index === 0 ? "sm:mb-0 sm:h-full" : ""
-              }`}
-            />
-          </div>
+<div
+        className={`relative bg-[#1A1A1A] rounded-lg shadow-md flex-1 h-[343px] lg:h-[600px] py-16 px-8 flex justify-center items-center ${
+          index === 0 || index === 2 ? "sm:py-0" : ""
+        }`}
+      >
+        {/* Background Text for First and Third Projects */}
+        {(index === 0 || index === 2) && (
+          <span className="absolute top-4 left-4 bg-black text-[8px] lg:text-[10px] font-Manrope text-[#FFFFFF] px-2 py-1 rounded-2xl z-10">
+            {index === 0 ? "Conceptual Work" : "Challenge" }
+          </span>
+        )}
+
+        {/* Project Image */}
+        {console.log("Image Path:", project.Image, "Mobile Image Path:", project.mobileImage)}
+
+        <img
+          src={
+            index === 0 || index === 2
+              ? window.innerWidth < 768
+                ? project.mobileImage
+                : project.Image
+              : project.Image
+          }
+          alt={project.title}
+          className={`lg:w-[488px] lg:h-[347px] rounded-md object-contain z-0 ${
+            index === 0 || index === 2 ? "sm:mb-0 sm:h-full" : ""
+          }`}
+        />
+      </div>
         
           {/* Right: Project Details */}
           <div className="flex flex-col gap-4 flex-1 font-Manrope lg:py-30">
