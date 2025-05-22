@@ -39,15 +39,15 @@ const Connect = () => {
     // Send email using EmailJS
     emailjs
       .send(
-        "service_o92hu8e", // Service ID from .env
-        "template_o0frbhp", // Template ID from .env
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, // Service ID from .env
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Template ID from .env
         {
-          name: formData.name,
-          email: formData.email,
+          from_name: formData.name,
+          from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        "RWEBB7O5co8YkyJlM" // Public Key from .env
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Public Key from .env
       )
       .then(
         (response) => {

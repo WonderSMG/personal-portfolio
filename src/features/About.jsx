@@ -3,7 +3,7 @@ import aboutMeMobile from "../assets/aboutMeMobile.svg";
 
 const About = () => {
   return (
-    <section className="flex flex-col lg:flex-row lg:justify-between lg:items-start px-4 py-12 md:px-20 lg:px-24">
+    <section className="flex flex-col lg:flex-row lg:justify-between lg:items-start px-4 py-12 md:px-20 lg:px-24 border-b border-[#C7C7C7]">
       {/* Left: Large "ABOUT ME" */}
       <div className="text-[#F5F5F5] font-Bebas hidden md:block text-[50px] md:text-[80px] lg:text-[101px] leading-none">
         ABOUT ME
