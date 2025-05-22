@@ -4,8 +4,8 @@ import Navbar from "./features/Navbar";
 import Hero from "./features/Hero";
 import Projects from "./features/Projects";
 import About from "./features/About";
-import Connect from "./features/Connect";
 import AboutMe from "./features/AboutMe";
+import Connect from "./features/Connect";
 
 function App() {
   return (
@@ -20,13 +20,13 @@ function App() {
                 <Hero />
                 <Projects />
                 <About />
-                <Connect />
               </>
             }
           />
           <Route path="/about" element={<AboutMe />} />
-          <Route path="/connect" element={<Connect />} /> {/* Route for Connect */}
         </Routes>
+        {/* Connect Component Always Below */}
+        <Connect />
       </main>
     </Router>
   );
