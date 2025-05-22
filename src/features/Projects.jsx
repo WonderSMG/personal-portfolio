@@ -58,74 +58,74 @@ const Projects = () => {
       <div className="flex flex-col gap-12 lg:py-3">
         {projects.map((project, index) => (
           <div
-            key={index}
-            className="flex flex-col lg:flex-row lg:items-start gap-8"
+          key={index}
+          className="flex flex-col lg:flex-row lg:items-start gap-8"
+        >
+          {/* Left: Project Card */}
+          <div
+            className={`bg-[#1A1A1A] rounded-lg shadow-md flex-1 h-[343px] lg:h-[600px] py-16 px-8 flex justify-center items-center ${
+              index === 0 ? "sm:py-0" : ""
+            }`}
           >
-            {/* Left: Project Card */}
-            <div
-              className={`bg-[#1A1A1A] rounded-lg shadow-md w-[343px] h-[343px] lg:w-[600px] lg:h-[600px] py-16 px-8 flex justify-center items-center ${
-                index === 0 ? "sm:py-0" : ""
-              }`}
-            >
-              <img
-                src={
-                  index === 0
-                    ? window.innerWidth < 768
-                      ? project.mobileImage
-                      : project.Image
+            <img
+              src={
+                index === 0
+                  ? window.innerWidth < 768
+                    ? project.mobileImage
                     : project.Image
-                }
-                alt={project.title}
-                className={`lg:w-[488px] lg:h-[347px] rounded-md object-contain ${
-                  index === 0 ? "sm:mb-0 sm:h-full" : ""
-                }`}
-              />
-            </div>
-
-            {/* Right: Project Details */}
-            <div className="flex flex-col gap-4 lg:w-1/2 font-Manrope lg:py-30 ">
-              <h3 className="text-xl md:text-2xl font-bold text-[#FFFFFF]">
-                {project.title}
-              </h3>
-              <p className="text-sm md:text-base text-[#C7C7C7] break-words">
-                {project.description}
-              </p>
-              <p className="text-sm md:text-base text-[#FFFFFF]">
-                {project.info}
-              </p>
-              <div className="flex flex-col gap-4 text-sm md:text-base text-[#FFFFFF] border-b border-[#C7C7C7] pb-4">
-                <span className="font-bold uppercase border-b border-[#C7C7C7] pb-2">
-                  Project Info
-                </span>
-                <div className="flex justify-between items-center border-b border-[#C7C7C7] pb-2">
-                  <span className="font-light">Year</span>
-                  <span className="text-[#C7C7C7]">{project.year}</span>
-                </div>
-                <div className="flex justify-between items-center pb-2">
-                  <span className="font-light">Role</span>
-                  <span className="text-[#C7C7C7]">{project.role}</span>
-                </div>
+                  : project.Image
+              }
+              alt={project.title}
+              className={`lg:w-[488px] lg:h-[347px] rounded-md object-contain ${
+                index === 0 ? "sm:mb-0 sm:h-full" : ""
+              }`}
+            />
+          </div>
+        
+          {/* Right: Project Details */}
+          <div className="flex flex-col gap-4 flex-1 font-Manrope lg:py-30">
+            <h3 className="text-xl md:text-2xl font-bold text-[#FFFFFF]">
+              {project.title}
+            </h3>
+            <p className="text-sm md:text-base text-[#C7C7C7] break-words">
+              {project.description}
+            </p>
+            <p className="text-sm md:text-base text-[#FFFFFF]">{project.info}</p>
+            <div className="flex flex-col gap-4 text-sm md:text-base text-[#FFFFFF] border-b border-[#C7C7C7] pb-4">
+              <span className="font-bold uppercase border-b border-[#C7C7C7] pb-2">
+                Project Info
+              </span>
+              <div className="flex justify-between items-center border-b border-[#C7C7C7] pb-2">
+                <span className="font-light">Year</span>
+                <span className="text-[#C7C7C7]">{project.year}</span>
               </div>
-              <div className="flex gap-4 mt-4 pb-8">
-                <a
-                  href={project.liveDemo}
-                  className="flex uppercase items-center gap-2 text-[#D3E97A] font-bold hover:underline"
-                >
-                  Live Demo
-                  <img src={arrowIcon} alt="Arrow Icon" className="w-4 h-4" />
-                </a>
-                <a
+              <div className="flex justify-between items-center pb-2">
+                <span className="font-light">Role</span>
+                <span className="text-[#C7C7C7]">{project.role}</span>
+              </div>
+            </div>
+            <div className="flex gap-4 mt-4 pb-8">
+              <a
+                href={project.liveDemo}
+                className="flex uppercase items-center gap-2 text-[#D3E97A] font-bold hover:underline"
+              >
+                Live Demo
+                <img src={arrowIcon} alt="Arrow Icon" className="w-4 h-4" />
+              </a>
+              <a
                   href={project.githubLink}
                   className="flex uppercase items-center gap-2 text-[#D3E97A] font-bold hover:underline"
                 >
                   See on GitHub
                   <img src={githubLogo} alt="GitHub Logo" className="w-4 h-4" />
                 </a>
-              </div>
             </div>
           </div>
+        </div>
         ))}
       </div>
+
+      
     </section>
   );
 };
