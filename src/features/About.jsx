@@ -1,4 +1,5 @@
 import React from "react";
+import aboutMeMobile from "../assets/aboutMeMobile.svg";
 // import { useNavigate } from "react-router-dom";
 
 const About = () => {
@@ -21,7 +22,7 @@ const About = () => {
           I am a front-end developer based in Sydney looking for exciting
           opportunities. Has Mechanical Engineering background. Likes to focus
           on accessibility when developing. Passionate and curious about solving
-          problems. Currently, I’m exploring Reactjs, Webflow and a bit of
+          problems. Currently, I'm exploring Reactjs, Webflow and a bit of
           Designing. While I am not programming, I enjoy playing football,
           photography and playing Valorant. Learning more to improve skill.
         </p>
@@ -31,6 +32,10 @@ const About = () => {
         >
           More About Me
         </button>
+      </div>
+      {/* Mobile Only "About Me" Image */}
+      <div className="block md:hidden py-10">
+        <img className="h-[400px] w-[343px]" src={aboutMeMobile} alt="aboutMeMobile" />
       </div>
     </section>
   );
