@@ -65,7 +65,7 @@ const Connect = () => {
   };
 
   return (
-    <section id="connect" className="flex flex-col lg:flex-row lg:justify-between px-4 py-12 md:px-20 lg:px-24">
+    <section id="connect" className="flex flex-col lg:flex-row lg:justify-between px-4 py-12 md:px-20 lg:px-24 pt-24">
       {/* Left Section */}
       <div className="flex flex-col gap-6 lg:w-1/2">
         <h2 className="text-[30px] md:text-[60px] font-Bebas font-bold uppercase text-[#FFFFFF]">
