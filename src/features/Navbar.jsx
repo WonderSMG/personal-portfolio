@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
-import robertLogo from "../assets/robert garcia logo.svg";
+// import robertLogo from "../assets/robert garcia logo.svg";
 import mobileNavLogo from "../assets/mobileNavLogo.svg";
 
 const Navbar = () => {
@@ -27,7 +27,8 @@ const Navbar = () => {
         <section className="flex justify-between items-center md:px-12 md:py-6 px-2 py-4">
           {/* Logo */}
           <div onClick={handleLogoClick}>
-            <img src={robertLogo} alt="robertLogo" />
+            {/* <img src={robertLogo} alt="robertLogo" /> */}
+            <h1 className="text-[#C7C7C7] font-Bebas font-normal md:text-[40px] text-[24px]">WONDER AYEDOGBON</h1>
           </div>
 
           {/* Desktop Navigation */}

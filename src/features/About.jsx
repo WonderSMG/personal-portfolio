@@ -1,28 +1,9 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import aboutMeMobile from "../assets/aboutMeMobile.svg"; // Example import for the mobile image
 
 const About = () => {
   const navigate = useNavigate(); // Initialize useNavigate
-
-  const [isLoading, setIsLoading] = useState(true); // Loading state
-  useEffect(() => {
-    // Simulate a delay for loading (e.g., fetching data)
-    const timer = setTimeout(() => {
-      setIsLoading(false); // Set loading to false after 2 seconds
-    }, 2000);
-
-    return () => clearTimeout(timer); // Cleanup timer
-  }, []);
-
-  if (isLoading) {
-    // Show loading spinner while loading
-    return (
-      <div className="flex justify-center items-center h-screen">
-        <span className="loading loading-spinner loading-lg text-[#D3E97A]"></span>
-      </div>
-    );
-  }
 
   const handleMoreAboutMeClick = () => {
     navigate("/about"); // Navigate to the AboutMe page

@@ -17,17 +17,16 @@ const About = () => {
         {/* Right: Header, Paragraph, and Button */}
         <div className="flex flex-col gap-6 lg:w-1/2 font-Manrope">
           <h2 className="text-[24px] text-[#FFFFFF]">
-            I am a front-end developer based in Sydney. Has Mechanical
-            Engineering background.
+            I am a front-end developer based in Lagos. Has Applied Chemistry
+            background.
           </h2>
           <p className="text-[18px] text-[#C7C7C7] leading-[160%]">
-            I am a front-end developer based in Sydney looking for exciting
-            opportunities. Has Mechanical Engineering background. Likes to focus
-            on accessibility when developing. Passionate and curious about
-            solving problems. Currently, I'm exploring Reactjs, Webflow and a
-            bit of Designing. While I am not programming, I enjoy playing
-            football, photography and playing Valorant. Learning more to improve
-            skill.
+            I am a front-end developer based in Lagos looking for exciting
+            opportunities. Has Applied Chemistry background. Likes to focus on
+            accessibility when developing. Passionate and curious about solving
+            problems. Currently, I'm exploring Reactjs, Typescript, and a bit of
+            Designing. While I am not programming, I enjoy playing football,
+            photography and playing Valorant. Learning more to improve skill.
           </p>
           <div className="text-[#0A0A0A] flex gap-4 lg:w-auto w-full">
             <article className="bg-[#D3E97A] flex items-center rounded-full gap-4 px-6 py-3">
@@ -72,9 +71,7 @@ const About = () => {
         {/* Right: Header, Paragraph, and Button */}
         <div className="flex flex-col gap-6 lg:w-1/2 ">
           <h2 className="text-[18px] font-Manrope text-[#FFFFFF]">
-            I am always lookng forward to add more skills to my portfolio. Morbi
-            equestas neque eu blandit fermentum. Nulla ac norbotis ligula.
-            Pellentesque ac ex at purus faucibus tristique ut et dolor.
+            I am always lookng forward to add more skills to my portfolio. I am working on developing a solid experience in JavaScript, TypeScript, HTML, and CSS, to bring a strong foundation in front-end development and modern web technologies. I excel at building responsive, user-friendly interfaces and developing clean, maintainable code. I am dedicated to delivering efficient, high-quality solutions that enhance user experience and meet project goals.
           </h2>
           <div className="text-[16px] text-white leading-">
             <div className="flex flex-wrap gap-4 mb-4 font-Manrope">
@@ -119,7 +116,7 @@ const About = () => {
               <h2 className="text-[18px] text-[#FFFFFF]">
                 Freelance developer
               </h2>
-              <h2 className="text-[16px] text-[#C7C7C7]">Nov 2023 - Present</h2>
+              <h2 className="text-[16px] text-[#C7C7C7]">December 2024 - Present</h2>
             </div>
             <div>
               <p className="text-[16px] text-[#C7C7C7] leading-relaxed">
@@ -133,15 +130,15 @@ const About = () => {
             <div className="md:flex justify-between items-center mb-4">
               <h2 className="text-[18px] text-[#FFFFFF]">Front-End Intern</h2>
               <h2 className="text-[16px] text-[#C7C7C7]">
-                Sept 2023 - Nov 2023
+                May 2025 - Present
               </h2>
             </div>
-            <h3 className="text-[#D3E97A]">Roos Tech</h3>
+            <h3 className="text-[#D3E97A]">TechStudio Academy</h3>
             <p className="text-[16px] text-[#C7C7C7] leading-relaxed pt-4">
-              I am a front-end developer based in Sydney looking for exciting
-              opportunities. Has Mechanical Engineering background. Likes to
+              I am a front-end developer based in Lagos looking for exciting
+              opportunities. Has Applied Chemistry background. Likes to
               focus on accessibility when developing. Passionate and curious
-              about solving problems. Currently, I'm exploring Reactjs, Webflow
+              about solving problems. Currently, I'm exploring Reactjs, Typescript,
               and a bit of Designing. While I am not programming, I enjoy
               playing football, photography and playing Valorant. Learning more
               to improve skill.

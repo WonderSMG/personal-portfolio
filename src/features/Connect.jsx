@@ -195,7 +195,7 @@ const Connect = () => {
         </form>
       </div>
       <div className="mt-12 text-sm text-[#C7C7C7] lg:hidden">
-        &copy; 2025 Robert Garcia
+        &copy; 2025 Wonder Ayedogbon
       </div>
     </section>
   );
