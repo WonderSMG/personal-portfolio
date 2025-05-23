@@ -98,21 +98,21 @@ const Connect = () => {
             <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/WonderSMG"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/wondersmg1?s=21&t=kAtAUHuF5JXXoDCegT5nzw"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={twitterIcon} alt="Twitter" className="w-6 h-6" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/wonder_smg?igsh=eTU5YWN1d3N1NW5q&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -120,7 +120,7 @@ const Connect = () => {
           </a>
         </div>
         <div className="mt-12 text-sm text-[#C7C7C7] font-Manrope hidden lg:block pt-36">
-          &copy; 2025 Robert Garcia
+          &copy; 2025 Wonder Ayedogbon
         </div>
       </div>
 

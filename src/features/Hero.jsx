@@ -1,3 +1,5 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import arrowLogo from "../assets/Arrow-mobile.png";
 import dotLogo from "../assets/dot-icon.png";
 import linkedinLogo from "../assets/linkedinLogo.svg";
@@ -5,6 +7,11 @@ import githubLogo from "../assets/githubLogo.svg";
 import myImage2 from "../assets/myImage2.JPG";
 
 const Hero = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleContactClick = () => {
+    navigate("/connect"); // Navigate to the Connect page
+  };
   return (
     <main className="flex flex-col lg:flex-row lg:justify-between lg:items-center px-4 py-8 md:px-20 lg:px-24 lg:pb-12 pt-24 border-b border-[#C7C7C7] pb-14 md:mt-10 mt-3">
       {/* Left Section: Text and Buttons */}
@@ -20,7 +27,9 @@ const Hero = () => {
         </div>
         <div className="text-[#0A0A0A] flex gap-4 lg:w-auto w-full mt-8">
           <article className="bg-[#D3E97A] flex items-center rounded-full gap-4 px-6 py-3">
-            <button className="font-Manrope text-sm lg:text-base whitespace-nowrap">
+            <button 
+            onClick={handleContactClick} // Add onClick handler
+            className="font-Manrope text-sm lg:text-base whitespace-nowrap">
               CONTACT ME
             </button>
             <img
