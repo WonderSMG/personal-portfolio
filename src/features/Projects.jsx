@@ -6,38 +6,38 @@ const Projects = () => {
   const projects = [
     {
       Image:
-        "https://res.cloudinary.com/dd9nujmdt/image/upload/v1747787398/projectImg1_ty9no4.svg",
+        "https://res.cloudinary.com/dwkpeu5ra/image/upload/v1748020305/desktop-preview_jtswgy.jpg",
       mobileImage:
         "https://res.cloudinary.com/dwkpeu5ra/image/upload/v1747867469/image_24_vy5ri3.svg",
-      title: "Promotional landing page for our favorite show",
+      title: "URL Shortening API landing Page",
       description:
-        "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
-      year: "2023",
+        "Mastered CSS Grid complexities in building an innovative url shortner, enablign users to shorten a valid URL, see a list of their shortened links even after browser is refreshed, copy the shortedned link to their clipboard, etc. Leveraged the challenge to enhance skills in front-end development.",
+      year: "2025",
       role: "Front-End Developer",
-      liveDemo: "#",
-      githubLink: "#",
+      liveDemo: "https://url-shortener-taupe-pi-94.vercel.app/",
+      githubLink: "https://github.com/WonderSMG/url-shortener.git",
     },
     {
       Image:
-        "https://res.cloudinary.com/dd9nujmdt/image/upload/v1747787413/projectImg2_wz3xdk.svg",
-      title: "Blog site for World News",
+        "https://res.cloudinary.com/dwkpeu5ra/image/upload/v1748020660/desktop-design_wbvfes.jpg",
+      title: "Interactive Rating Component",
       description:
-        "Mastered CSS Grid complexities in building an innovative news homepage, navigating intricate design decisions for a seamless user experience. Leveraged the challenge to enhance skills in  front-end development.",
-      year: "2022",
+        "Teamed up with a designer to breathe life into a user-friendly platform that lets visitors quickly rate products, services, or content using intuitive interactive elements making feedback fast, engaging, and easy to collect.",
+      year: "2025",
+      role: "Front-End Developer",
+      liveDemo: "https://rating-component-project.vercel.app/",
+      githubLink: "https://github.com/WonderSMG/rating-component-project.git",
+    },
+    {
+      Image:
+        "https://res.cloudinary.com/dd9nujmdt/image/upload/v1748010425/Screenshot_2025-05-23_at_3.24.10_PM_qds6e2.png",
+      title: "E-commerce Burger website",
+      description:
+        "I designed and developed a responsive e-commerce website for a burger brand, focusing on user-friendly navigation and a visually appetizing interface. The site features an interactive menu with customizable burger options, a streamlined ordering process, and secure checkout. Emphasis was placed on mobile optimization and a modern aesthetic to enhance user experience and drive online sales.",
+      year: "2025",
       role: "Full-Stack Developer",
-      liveDemo: "#",
-      githubLink: "#",
-    },
-    {
-      Image:
-        "https://res.cloudinary.com/dd9nujmdt/image/upload/v1747787413/projectImg3_dki34b.svg",
-      title: "E-commerce product page",
-      description:
-        "Successfully crafted an engaging product page featuring a dynamic lightbox gallery and seamless cart functionality, showcasing proficiency in JavaScript development.",
-      year: "2022",
-      role: "Front-End Developer",
-      liveDemo: "#",
-      githubLink: "#",
+      liveDemo: "https://eggys-place-eight.vercel.app/",
+      githubLink: "https://github.com/WonderSMG/eggys-place.git",
     },
   ];
 
@@ -117,6 +117,7 @@ const Projects = () => {
               <div className="flex gap-4 mt-4 pb-8">
                 <a
                   href={project.liveDemo}
+                  target="_blank"
                   className="flex uppercase items-center gap-2 text-[#D3E97A] font-bold hover:underline"
                 >
                   Live Demo
@@ -124,6 +125,7 @@ const Projects = () => {
                 </a>
                 <a
                   href={project.githubLink}
+                  target="_blank"
                   className="flex uppercase items-center gap-2 text-[#D3E97A] font-bold hover:underline"
                 >
                   See on GitHub
