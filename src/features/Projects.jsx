@@ -118,6 +118,7 @@ const Projects = () => {
                 <a
                   href={project.liveDemo}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex uppercase items-center gap-2 text-[#D3E97A] font-bold hover:underline"
                 >
                   Live Demo
@@ -126,6 +127,7 @@ const Projects = () => {
                 <a
                   href={project.githubLink}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex uppercase items-center gap-2 text-[#D3E97A] font-bold hover:underline"
                 >
                   See on GitHub

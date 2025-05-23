@@ -19,12 +19,12 @@ const About = () => {
       {/* Right: Header, Paragraph, and Button */}
       <div className="flex flex-col gap-6 lg:w-1/2 font-Manrope">
         <h2 className="text-[32px] hidden md:block text-[#FFFFFF]">
-          I am a front-end developer based in Sydney. Has Mechanical Engineering
+          I am a front-end developer based in Lagos. Has Applied Chemistry
           background.
         </h2>
         <p className="text-[18px] text-[#C7C7C7] leading-relaxed">
-          I am a front-end developer based in Sydney looking for exciting
-          opportunities. Has Mechanical Engineering background. Likes to focus
+          I am a front-end developer based in Lagos looking for exciting
+          opportunities. Has Applied Chemistry background. Likes to focus
           on accessibility when developing. Passionate and curious about solving
           problems. Currently, I'm exploring Reactjs, Webflow and a bit of
           Designing. While I am not programming, I enjoy playing football,

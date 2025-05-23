@@ -1,8 +1,8 @@
-import heroImg from "../assets/heroImg.svg";
 import arrowLogo from "../assets/Arrow-mobile.png";
 import dotLogo from "../assets/dot-icon.png";
 import linkedinLogo from "../assets/linkedinLogo.svg";
 import githubLogo from "../assets/githubLogo.svg";
+import myImage from "../assets/myImage.jpg";
 
 const Hero = () => {
   return (
@@ -53,7 +53,7 @@ const Hero = () => {
       <section className="mt-8 lg:mt-0 flex justify-center md:justify-start lg:justify-end">
         <img
           className="w-full rounded-2xl sm:w-[300px] sm:h-[350px] md:w-[500px] lg:w-[600px] md:h-[600px] object-cover"
-          src={heroImg}
+          src={myImage}
           alt="Hero"
         />
       </section>
