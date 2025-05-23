@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
-import aboutMeMobile from "../assets/aboutMeMobile.svg"; // Example import for the mobile image
+import myImage from "../assets/myImage.jpg"; 
 
 const About = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -42,7 +42,7 @@ const About = () => {
       <div className="block md:hidden py-10">
         <img
           className="h-[400px] w-[343px]"
-          src={aboutMeMobile}
+          src={myImage}
           alt="aboutMeMobile"
         />
       </div>
