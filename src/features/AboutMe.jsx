@@ -3,7 +3,8 @@ import downloadImg from "../assets/downloadImg.svg";
 import dotLogo from "../assets/dot-icon.png";
 import linkedinLogo from "../assets/linkedinLogo.svg";
 import githubLogo from "../assets/githubLogo.svg";
-import aboutMeImg from "../assets/aboutMeImg.svg";
+import aboutMeImg from "../assets/myImage.jpg";
+
 
 const About = () => {
   return (
