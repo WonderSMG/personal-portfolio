@@ -15,6 +15,7 @@ const Connect = () => {
 
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,19 +23,29 @@ const Connect = () => {
     setErrors({ ...errors, [name]: "" }); // Clear error when user starts typing
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
+  const validateForm = () =>{
     const newErrors = {};
     if (!formData.name) newErrors.name = "Name is required.";
     if (!formData.email) newErrors.email = "Email is required.";
     if (!formData.subject) newErrors.subject = "Subject is required.";
     if (!formData.message) newErrors.message = "Message is required.";
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0
 
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const isValid = validateForm();
+    if (!isValid) {
+      
+      setIsSubmitting(false); 
       return;
     }
+    setIsSubmitting(true);
+
 
     // Send email using EmailJS
     emailjs
@@ -54,18 +65,29 @@ const Connect = () => {
           console.log("SUCCESS!", response.status, response.text);
           setSuccessMessage("Your message has been sent successfully!");
           setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
+          setErrors({}); // Clear any previous form errors
+          setTimeout(() => setSuccessMessage(""), 3000);
         },
         (error) => {
           console.error("FAILED...", error);
           setErrors({
             form: "Failed to send your message. Please try again later.",
-          });
+          })
+          setTimeout(() => setErrors({ form: "" }), 5000);
+          
         }
-      );
+      )
+      .finally(() => {
+        // This will run whether the email was sent successfully or failed
+        setIsSubmitting(false); // Reset submitting state
+      });
   };
 
   return (
-    <section id="connect" className="flex flex-col lg:flex-row lg:justify-between px-4 py-12 md:px-20 lg:px-24 pt-24">
+    <section
+      id="connect"
+      className="flex flex-col lg:flex-row lg:justify-between px-4 py-12 md:px-20 lg:px-24 md:pt-40"
+    >
       {/* Left Section */}
       <div className="flex flex-col gap-6 lg:w-1/2">
         <h2 className="text-[30px] md:text-[60px] font-Bebas font-bold uppercase text-[#FFFFFF]">
@@ -125,7 +147,7 @@ const Connect = () => {
       </div>
 
       {/* Right Section: Form */}
-      
+
       <div className="flex flex-col gap-6 font-Manrope  lg:w-1/2 mt-12 lg:mt-0">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>
@@ -135,6 +157,7 @@ const Connect = () => {
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
+              disabled={isSubmitting}
               className="w-full p-4 rounded-lg bg-[#1A1A1A] text-[#FFFFFF] placeholder-[#C7C7C7] focus:outline-none focus:ring-2 focus:ring-[#D3E97A]"
             />
             {errors.name && (
@@ -148,6 +171,7 @@ const Connect = () => {
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
+              disabled={isSubmitting}
               className="w-full p-4 rounded-lg bg-[#1A1A1A] text-[#FFFFFF] placeholder-[#C7C7C7] focus:outline-none focus:ring-2 focus:ring-[#D3E97A]"
             />
             {errors.email && (
@@ -161,6 +185,7 @@ const Connect = () => {
               placeholder="Subject"
               value={formData.subject}
               onChange={handleChange}
+              disabled={isSubmitting}
               className="w-full p-4 rounded-lg bg-[#1A1A1A] text-[#FFFFFF] placeholder-[#C7C7C7] focus:outline-none focus:ring-2 focus:ring-[#D3E97A]"
             />
             {errors.subject && (
@@ -174,6 +199,7 @@ const Connect = () => {
               rows="6"
               value={formData.message}
               onChange={handleChange}
+              disabled={isSubmitting}
               className="w-full p-4 rounded-lg bg-[#1A1A1A] text-[#FFFFFF] placeholder-[#C7C7C7] focus:outline-none focus:ring-2 focus:ring-[#D3E97A]"
             ></textarea>
             {errors.message && (
@@ -182,9 +208,10 @@ const Connect = () => {
           </div>
           <button
             type="submit"
-            className="bg-[#D3E97A] text-[#0A0A0A] w-30 uppercase font-bold py-3 px-6 rounded-4xl hover:bg-[#c2d86a] cursor-pointer transition-all"
+            className="bg-[#D3E97A] text-[#0A0A0A] w-40 font-bold py-3 px-8 rounded-4xl hover:bg-[#c2d86a] cursor-pointer transition-all"
+            disabled={isSubmitting}
           >
-            Submit
+            {isSubmitting ? "Submitting..." : "SUBMIT"}
           </button>
           {successMessage && (
             <p className="text-green-500 text-sm mt-4">{successMessage}</p>

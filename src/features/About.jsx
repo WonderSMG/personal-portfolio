@@ -32,7 +32,7 @@ const About = () => {
         </p>
         <button
           onClick={handleMoreAboutMeClick} // Add onClick handler
-          className="text-[#D3E97A] font-bold py-3 md:px-6 text-left underline uppercase transition-all"
+          className="text-[#D3E97A] font-bold py-3 md:px-6 text-left underline uppercase transition-all hover:cursor-pointer"
         >
           More About Me
         </button>

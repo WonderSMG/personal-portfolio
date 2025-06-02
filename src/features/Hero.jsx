@@ -27,9 +27,10 @@ const Hero = () => {
         </div>
         <div className="text-[#0A0A0A] flex gap-4 lg:w-auto w-full mt-8">
           <article className="bg-[#D3E97A] flex items-center rounded-full gap-4 px-6 py-3">
-            <button 
-            onClick={handleContactClick} // Add onClick handler
-            className="font-Manrope text-sm lg:text-base whitespace-nowrap">
+            <button
+              onClick={handleContactClick} // Add onClick handler
+              className="font-Manrope text-sm lg:text-base whitespace-nowrap hover:cursor-pointer"
+            >
               CONTACT ME
             </button>
             <img
@@ -42,18 +43,22 @@ const Hero = () => {
             </div>
           </article>
           <button className="bg-[#222222] rounded-full p-3">
-            <img
-              className="w-5 h-5 lg:w-6 lg:h-6"
-              src={linkedinLogo}
-              alt="linkedinLogo"
-            />
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedinLogo} alt="LinkedIn" className="w-6 h-6" />
+            </a>
           </button>
           <button className="bg-[#222222] rounded-full p-3">
-            <img
-              className="w-5 h-5 lg:w-6 lg:h-6"
-              src={githubLogo}
-              alt="githubLogo"
-            />
+            <a
+              href="https://github.com/WonderSMG"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={githubLogo} alt="GitHub" className="w-6 h-6" />
+            </a>
           </button>
         </div>
       </section>

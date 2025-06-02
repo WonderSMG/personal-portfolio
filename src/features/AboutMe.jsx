@@ -31,7 +31,7 @@ const About = () => {
           </p>
           <div className="text-[#0A0A0A] flex gap-4 lg:w-auto w-full">
             <article className="bg-[#D3E97A] flex items-center rounded-full gap-4 px-6 py-3">
-              <button className="font-Manrope text-sm lg:text-base whitespace-nowrap">
+              <button className="font-Manrope text-sm lg:text-base whitespace-nowrap hover:cursor-pointer">
                 DOWNLOAD RESUME
               </button>
               <img
@@ -43,14 +43,14 @@ const About = () => {
                 <img className="w-4 h-4" src={downloadImg} alt="arrowLogo" />
               </div>
             </article>
-            <button className="bg-[#222222] rounded-full p-3">
+            <button className="bg-[#222222] rounded-full p-3 hover:cursor-pointer">
               <img
                 className="w-5 h-5 lg:w-6 lg:h-6"
                 src={linkedinLogo}
                 alt="linkedinLogo"
               />
             </button>
-            <button className="bg-[#222222] rounded-full p-3">
+            <button className="bg-[#222222] rounded-full p-3 hover:cursor-pointer">
               <img
                 className="w-5 h-5 lg:w-6 lg:h-6"
                 src={githubLogo}
