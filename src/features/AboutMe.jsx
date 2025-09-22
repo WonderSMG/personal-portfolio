@@ -3,13 +3,13 @@ import downloadImg from "../assets/downloadImg.svg";
 import dotLogo from "../assets/dot-icon.png";
 import linkedinLogo from "../assets/linkedinLogo.svg";
 import githubLogo from "../assets/githubLogo.svg";
-import aboutMeImg from "../assets/myImage.jpg";
+import aboutMeImg from "../assets/myNewImage.jpeg";
 
 
 const About = () => {
   return (
     <main className="">
-      <section className="flex flex-col lg:flex-row lg:justify-between lg:items-start px-4 py-12 md:px-20 lg:px-24 pt-36">
+      <section className="flex flex-col lg:flex-row lg:justify-between lg:items-start container mx-auto py-12 pt-36">
         {/* Left: Large "ABOUT ME" */}
         <div className="text-[#F5F5F5] font-Bebas text-[50px] md:text-[80px] lg:text-[101px] leading-none mb-5">
           ABOUT ME
@@ -60,10 +60,10 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="flex justify-center items-center py-10">
-        <img className=" w-[88%]" src={aboutMeImg} alt="aboutMeImg" />
+      <section className="flex justify-center items-center py-10 container mx-auto">
+        <img className="rounded-xl" src={aboutMeImg} alt="aboutMeImg" />
       </section>
-      <section className="flex flex-col lg:flex-row lg:justify-between lg:items-start px-4 py-12 md:px-20 lg:px-24 border-b border-[#C7C7C7]">
+      <section className="flex flex-col lg:flex-row lg:justify-between lg:items-start container mx-auto py-12  border-b border-[#C7C7C7]">
         {/* Left: Large "ABOUT ME" */}
         <div className="text-[#F5F5F5] font-Bebas text-[50px] md:text-[80px] lg:text-[76pxpx] leading-none mb-4">
           MY CAPABILITIES
@@ -104,7 +104,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row lg:justify-between lg:items-start px-4 py-12 md:px-20 lg:px-24 border-b border-[#C7C7C7]">
+      <section className="flex flex-col lg:flex-row lg:justify-between lg:items-start container mx-auto py-12 border-b border-[#C7C7C7]">
         {/* Left: Large "ABOUT ME" */}
         <div className="text-[#F5F5F5] font-Bebas text-[50px] md:text-[80px] lg:text-[76px] leading-none mb-4">
           MY EXPERIENCE

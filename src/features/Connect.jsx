@@ -86,7 +86,7 @@ const Connect = () => {
   return (
     <section
       id="connect"
-      className="flex flex-col lg:flex-row lg:justify-between px-4 py-12 md:px-20 lg:px-24 md:pt-40"
+      className="flex flex-col lg:flex-row lg:justify-between py-12 container mx-auto md:pt-40"
     >
       {/* Left Section */}
       <div className="flex flex-col gap-6 lg:w-1/2">

@@ -6,6 +6,39 @@ const Projects = () => {
   const projects = [
     {
       Image:
+        "https://res.cloudinary.com/dd9nujmdt/image/upload/v1748010425/Screenshot_2025-05-23_at_3.24.10_PM_qds6e2.png",
+      title: "E-commerce Burger website",
+      description:
+        "I designed and developed a responsive e-commerce website for a burger brand, focusing on user-friendly navigation and a visually appetizing interface. The site features an interactive menu with customizable burger options, a streamlined ordering process, and secure checkout. Emphasis was placed on mobile optimization and a modern aesthetic to enhance user experience and drive online sales.",
+      year: "2025",
+      role: "Full-Stack Developer",
+      liveDemo: "https://eggys-place-eight.vercel.app/",
+      githubLink: "https://github.com/WonderSMG/eggys-place.git",
+    },
+    {
+      Image:
+        "https://res.cloudinary.com/dwkpeu5ra/image/upload/v1758545014/Component_11_dakdve.png",
+      title: "Engineering Company (EPT) Website Redesign",
+      description:
+        "A comprehensive solution for a construction company, showcasing skills in modern web development. It features a responsive navigation bar, multiple page routing, a functional contact modal, and a clean, professional design that reflects the EPT's brand.",
+      year: "2025",
+      role: "Front-End Developer",
+      liveDemo: "https://ept-rebranding-6qd1.vercel.app/",
+      githubLink: "https://github.com/cutekesh/EPT_Rebranding",
+    },
+    {
+      Image:
+        "https://res.cloudinary.com/dwkpeu5ra/image/upload/v1758234023/IMG_8748_o3ofhc.jpg",
+      title: "Online Real Estate Marketplace",
+      description:
+        "I developed an online real estate marketplace that enables users to seamlessly search, list, and manage properties for sale or rent. The platform features advanced search filters, interactive property galleries, and a responsive design, ensuring an intuitive experience for buyers, sellers, and agents while showcasing strong backend and frontend integration.",
+      year: "2025",
+      role: "Full-Stack Developer",
+      liveDemo: "https://beta-house-nine.vercel.app/",
+      githubLink: "https://github.com/WonderSMG/beta-house",
+    },
+    {
+      Image:
         "https://res.cloudinary.com/dwkpeu5ra/image/upload/v1748020305/desktop-preview_jtswgy.jpg",
       mobileImage:
         "https://res.cloudinary.com/dwkpeu5ra/image/upload/v1747867469/image_24_vy5ri3.svg",
@@ -28,21 +61,11 @@ const Projects = () => {
       liveDemo: "https://rating-component-project.vercel.app/",
       githubLink: "https://github.com/WonderSMG/rating-component-project.git",
     },
-    {
-      Image:
-        "https://res.cloudinary.com/dd9nujmdt/image/upload/v1748010425/Screenshot_2025-05-23_at_3.24.10_PM_qds6e2.png",
-      title: "E-commerce Burger website",
-      description:
-        "I designed and developed a responsive e-commerce website for a burger brand, focusing on user-friendly navigation and a visually appetizing interface. The site features an interactive menu with customizable burger options, a streamlined ordering process, and secure checkout. Emphasis was placed on mobile optimization and a modern aesthetic to enhance user experience and drive online sales.",
-      year: "2025",
-      role: "Full-Stack Developer",
-      liveDemo: "https://eggys-place-eight.vercel.app/",
-      githubLink: "https://github.com/WonderSMG/eggys-place.git",
-    },
+    
   ];
 
   return (
-    <section className="px-4 py-12 md:px-20 lg:px-24 border-b border-[#C7C7C7] pb-14">
+    <section className="py-12 container mx-auto border-b border-[#C7C7C7] pb-14">
       {/* Heading */}
       <div className="text-left mb-12">
         <h2 className="text-[46px] md:text-[76px] h-[76px] lg:w-[464px] font-Bebas font-bold uppercase text-[#FFFFFF]">
@@ -68,13 +91,13 @@ const Projects = () => {
               }`}
             >
               {/* Background Text */}
-              {(index === 0 || index === 2) && (
+              {(index === 0 || index === 1) && (
                 <span className="absolute top-8 left-10 bg-black text-[8px] lg:text-[10px] font-Manrope text-[#FFFFFF] px-2 py-1 rounded-2xl z-10">
-                  {index === 0 ? "Conceptual Work" : "Challenge"}
+                  {index === 0 ? "Conceptual Work" : "Collaboration" }
                 </span>
               )}
 
-              {/* Project Image */}
+              {/* Project Image */} 
               <img
                 src={
                   index === 0

@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-black">
       <main>
-        <section className="flex justify-between items-center md:px-12 md:py-6 px-2 py-4">
+        <section className="flex justify-between items-center container mx-auto py-4">
           {/* Logo */}
           <div onClick={handleLogoClick}>
             {/* <img src={robertLogo} alt="robertLogo" /> */}
@@ -65,7 +65,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMobileNavVisible && (
-          <nav className="md:hidden bg-[#0A0A0A] text-white text-center px-12 py-4">
+          <nav className="md:hidden bg-[#0A0A0A] text-white text-center container mx-auto py-4">
             <ul className="flex flex-col gap-4">
               <button
                 className="text-[#C7C7C7] cursor-pointer hover:text-[#D3E97A]"
