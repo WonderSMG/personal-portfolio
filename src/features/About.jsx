@@ -43,7 +43,7 @@ const About = () => {
         <img
           className="h-[400px] w-[343px]"
           src={myImage}
-          alt="aboutMeMobile"
+          alt="aboutMeMobileImage"
         />
       </div>
     </section>
