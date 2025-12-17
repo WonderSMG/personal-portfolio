@@ -6,6 +6,7 @@ import Projects from "./features/Projects";
 import About from "./features/About";
 import AboutMe from "./features/AboutMe";
 import Connect from "./features/Connect";
+import Portfolio from "./features/Portfolio";
 
 function App() {
   return (
@@ -20,13 +21,15 @@ function App() {
                 <Hero />
                 <Projects />
                 <About />
+                <Connect />
               </>
             }
           />
           <Route path="/about" element={<AboutMe />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/connect" element={<Connect />} />
         </Routes>
-        {/* Connect Component Always Below */}
-        <Connect />
+        
       </main>
     </Router>
   );

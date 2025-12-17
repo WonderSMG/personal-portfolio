@@ -22,12 +22,15 @@ const About = () => {
             background.
           </h2>
           <p className="text-[18px] text-[#C7C7C7] leading-[160%]">
-            I am a front-end developer based in Lagos looking for exciting
-            opportunities. Has Applied Chemistry background. Likes to focus on
-            accessibility when developing. Passionate and curious about solving
-            problems. Currently, I'm exploring Reactjs, Typescript, and a bit of
-            Designing. While I am not programming, I enjoy playing football,
-            photography and playing Valorant. Learning more to improve skill.
+          I am a front-end developer based in Lagos, actively seeking exciting
+          opportunities. I approach development with a strong focus on
+          accessibility and possess a curious, problem-solving mindset, drawing
+          on my background in Applied Chemistry. Currently, I'm expanding my
+          technical stack by exploring Reactjs, Webflow, and UI/UX Designing. To
+          further enhance my analytical capabilities and ability to solve
+          complex problems at scale, I am also actively learning Data Science.
+          When I'm not programming, I enjoy playing football, photography, and
+          playing Scrabble.
           </p>
           <div className="text-[#0A0A0A] flex gap-4 lg:w-auto w-full">
             <article className="bg-[#D3E97A] flex items-center rounded-full gap-4 px-6 py-3">

@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
-import myImage from "../assets/myImage.jpg"; 
+import myImage from "../assets/myImage.jpg";
 
 const About = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -23,12 +23,15 @@ const About = () => {
           background.
         </h2>
         <p className="text-[18px] text-[#C7C7C7] leading-relaxed">
-          I am a front-end developer based in Lagos looking for exciting
-          opportunities. Has Applied Chemistry background. Likes to focus
-          on accessibility when developing. Passionate and curious about solving
-          problems. Currently, I'm exploring Reactjs, Webflow and a bit of
-          Designing. While I am not programming, I enjoy playing football,
-          photography and playing Valorant. Learning more to improve skill.
+          I am a front-end developer based in Lagos, actively seeking exciting
+          opportunities. I approach development with a strong focus on
+          accessibility and possess a curious, problem-solving mindset, drawing
+          on my background in Applied Chemistry. Currently, I'm expanding my
+          technical stack by exploring Reactjs, Webflow, and UI/UX Designing. To
+          further enhance my analytical capabilities and ability to solve
+          complex problems at scale, I am also actively learning Data Science.
+          When I'm not programming, I enjoy playing football, photography, and
+          playing Scrabble.
         </p>
         <button
           onClick={handleMoreAboutMeClick} // Add onClick handler

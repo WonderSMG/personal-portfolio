@@ -42,9 +42,9 @@ const Navbar = () => {
               </button>
               <button
                 className="text-[#C7C7C7] cursor-pointer hover:text-[#D3E97A]"
-                onClick={() => navigate("/work")} // Example for navigating to Work page
+                onClick={() => navigate("/portfolio")} // Navigate to Portfolio page
               >
-                Work
+                Portfolio
               </button>
               <button
                 className="text-[#C7C7C7] cursor-pointer hover:text-[#D3E97A]"
@@ -75,9 +75,9 @@ const Navbar = () => {
               </button>
               <button
                 className="text-[#C7C7C7] cursor-pointer hover:text-[#D3E97A]"
-                onClick={() => navigate("/work")} // Example for navigating to Work page
+                onClick={() => navigate("/portfolio")} // Example for navigating to Work page
               >
-                Work
+                Portfolio
               </button>
               <button
                 className="text-[#C7C7C7] cursor-pointer hover:text-[#D3E97A]"
